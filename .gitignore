@@ -4,3 +4,5 @@ __pycache__/
 *.pth
 media/
 node_modules/
+.vscode/
+pytorch-roadmap.md
