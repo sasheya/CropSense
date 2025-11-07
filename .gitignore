@@ -1,8 +1,28 @@
+# Python/Django Backend
 venv/
 *.pyc
 __pycache__/
-*.pth
+db.sqlite3
 media/
-node_modules/
+.env
+
+# Frontend (Vite)
+/frontend/node_modules
+/frontend/dist
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/coverage/
+
+# IDE & OS Files
 .vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
 pytorch-roadmap.md
+cropsense.pdf
