@@ -8,13 +8,13 @@ class DiseaseSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'created_at']
 
 class DetectionRecordSerializer(serializers.ModelSerializer):
-    disease_details = DiseaseSerializer(source='disease', read_only=True)
+    disease_details = DiseaseSerializer(source='detected_disease', read_only=True)
     username = serializers.CharField(source='user.username', read_only=True)
 
     class Meta:
         model = DetectionRecord
         fields = ['id', 'image', 'detected_disease', 'disease_details', 'username', 'confidence', 'detected_at']
-        read_only_fields = ['id', 'user', 'disease', 'confidence', 'detected_at']
+        read_only_fields = ['id', 'user', 'detected_disease', 'confidence', 'detected_at']
 
 class DetectionCreateSerializer(serializers.ModelSerializer):
     class Meta:

@@ -44,7 +44,7 @@ class DiseaseDetectionView(APIView):
             )
             
             # Update detection with results
-            detection.disease = disease
+            detection.detected_disease = disease
             detection.confidence = result['confidence']
             detection.save()
             
@@ -76,7 +76,7 @@ class DetectionHistoryView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        return Detection.objects.filter(user=self.request.user).select_related('disease')
+        return Detection.objects.filter(user=self.request.user).select_related('detected_disease')
 
 
 class DetectionDetailView(generics.RetrieveDestroyAPIView):
@@ -120,8 +120,8 @@ class DetectionStatisticsView(APIView):
         # Count diseases
         disease_counts = {}
         for d in detections:
-            if d.disease:
-                disease_counts[d.disease.name] = disease_counts.get(d.disease.name, 0) + 1
+            if d.detected_disease:
+                disease_counts[d.detected_disease.name] = disease_counts.get(d.detected_disease.name, 0) + 1
         
         most_common = sorted(disease_counts.items(), key=lambda x: x[1], reverse=True)[:5]
         

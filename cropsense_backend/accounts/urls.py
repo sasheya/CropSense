@@ -1,6 +1,10 @@
 # backend/accounts/urls.py
 
 from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 from .views import (
     UserRegistrationView,
     UserLoginView,
@@ -11,6 +15,7 @@ from .views import (
     UserStatisticsView,
     DeleteAccountView
 )
+
 
 urlpatterns = [
     # Authentication
@@ -24,4 +29,8 @@ urlpatterns = [
     path('change-password/', PasswordChangeView.as_view(), name='change-password'),
     path('statistics/', UserStatisticsView.as_view(), name='user-statistics'),
     path('delete/', DeleteAccountView.as_view(), name='delete-account'),
+
+     # JWT Token endpoints
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]

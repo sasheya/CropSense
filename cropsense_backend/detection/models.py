@@ -30,4 +30,4 @@ class DetectionRecord(models.Model):
         ordering = ['-detected_at']
 
     def __str__(self):
-        return f"{self.user.username} - {self.disease.name if self.disease else 'Unknown'} ({self.detected_at.strftime('%Y-%m-%d %H:%M')})"
+        return f"{self.user.username} - {self.detected_disease.name if self.detected_disease else 'Unknown'} ({self.detected_at.strftime('%Y-%m-%d %H:%M')})"
