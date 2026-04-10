@@ -4,7 +4,7 @@
 
 CropSense AI is a full-stack agricultural platform leveraging artificial intelligence to provide Indian farmers with accurate crop disease detection, real-time weather intelligence, and community-driven support. The system addresses the critical challenge of crop diseases, which account for 20-30% of annual agricultural losses in India, by combining PyTorch-powered disease detection achieving 98%+ accuracy with comprehensive farm management tools.
 
-![Landing Page](snaps\Landing_Page.png?raw=true)
+![Landing Page](snaps/Landing_Page.png)
 
 ## Key Features
 
@@ -14,35 +14,35 @@ CropSense AI is a full-stack agricultural platform leveraging artificial intelli
 - Delivers results within 3 seconds with confidence scores
 - Provides detailed symptoms, treatment recommendations, and preventive measures
 
-![Disease Detection Page](snaps\Disease_Detection.png?raw=true)
+![Disease Detection Page](snaps/Disease_Detection.png)
 
 ### Real-Time Weather Intelligence
 - Integration with OpenWeatherMap API for current conditions and 5-day forecasts
 - Displays temperature, humidity, wind speed, and precipitation data
 - Enables informed decisions for irrigation, spraying, and harvesting
 
-![Weather Dashboard](snaps\Weather_Dashboard.png?raw=true)
+![Weather Dashboard](snaps/Weather_Dashboard.png)
 
 ### Smart Farming Calendar
 - Interactive 7-day calendar with weather-integrated task suggestions
 - Automated scheduling for sowing, fertilizing, pest control, and harvesting
 - Optimizes timing based on climatic conditions
 
-![Farming Calendar](snaps\Farming_Calendar.png?raw=true)
+![Farming Calendar](snaps/Farming_Calendar.png)
 
 ### Community Forum
 - Knowledge exchange platform for farmers, experts, and researchers
 - Post creation, commenting, and discussion capabilities
 - Search and filter functionality for relevant topics
 
-![Community Forum](snaps\Community_Forum.png?raw=true)
+![Community Forum](snaps/Community_Forum.png)
 
 ### Analytics Dashboard
 - Comprehensive detection history tracking
 - Statistics visualization for total detections and common diseases
 - Data-driven insights for crop health management
 
-![Analytics Dashboard](snaps\Analytics_Dashboard.png?raw=true)
+![Analytics Dashboard](snaps/Analytics_Dashboard.png)
 
 ## Technology Stack
 
