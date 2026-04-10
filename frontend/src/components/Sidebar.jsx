@@ -11,7 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { title: "Dashboard", url: "/", icon: LayoutDashboard },
+  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "Detection", url: "/detection", icon: Camera },
   { title: "Calendar", url: "/calendar", icon: Calendar },
   { title: "Weather", url: "/weather", icon: CloudSun },
